@@ -10,5 +10,5 @@ gsettings set org.gnome.desktop.input-sources xkb-options "['grp:alt_shift_toggl
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'ru')]"
 
 # Поменять маппинг кавычек
-sudo cp /usr/share/X11/xkb/symbols/us /usr/share/X11/xkb/symbols/us.bak
-sudo sed -i 's/section { shift<AC11>=[dollar,asterisk]; };/section { shift<AC11>=[dollar,apostrophe]; };/' /usr/share/X11/xkb/symbols/us
+sudo sed -i 's/^key <AC11>.*$/key <AC11> {        [  quotedbl,    apostrophe      ]       };/' /usr/share/X11/xkb/symbols/us
+
