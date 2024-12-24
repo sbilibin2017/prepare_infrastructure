@@ -12,4 +12,3 @@ sudo apt install -y python${PYTHON_VERSION} python${PYTHON_VERSION}-venv python$
 pip3 install --user poetry
 echo 'export PATH=$PATH:$HOME/.local/bin' >> ~/.zshrc
 pip3 install pyright
-poetry config virtualenvs.in-project true

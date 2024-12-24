@@ -7,8 +7,8 @@ SCRIPTS = install_oh_my_zsh.sh \
           install_docker.sh \
           install_go.sh \
           install_python.sh \
-          install_neovim.sh \
-          configure_neovim.sh
+          install_neovim.sh
+          
 
 # Цель по умолчанию
 all: $(SCRIPTS)
