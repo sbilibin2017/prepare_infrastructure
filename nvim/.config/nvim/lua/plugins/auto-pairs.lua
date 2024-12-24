@@ -1,2 +1,0 @@
-require('auto-pairs').setup()
-
